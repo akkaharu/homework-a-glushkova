@@ -1,0 +1,115 @@
+@media screen and (max-width: 767px) {
+    .footer{
+        visibility: hidden;
+    }
+    body {
+        font-size: 0.6em;
+        padding: 20px;
+    }
+    .container {
+        width: 100%;
+    }
+}
+body {
+    padding: 20px;
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'content content sidebar'
+        'content content sidebar'
+        'content content sidebar';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px repeat(3, 1fr);
+    border: red 1px solid;
+    gap: 1rem;
+}
+.header {
+    grid-area: header;
+    border: red 1px solid;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.content{
+    grid-area: content;
+    display: grid;
+    grid-template-areas: 
+    'header-content header-content'
+    'content-1 content-2'
+    'content-3 content-3';
+    gap: 1rem;border: red 1px solid;
+}
+.header-content {
+    grid-area: header-content;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.content-1 {
+    grid-area: content-1;
+    border: red 1px solid;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.content-2 {
+    grid-area: content-2;
+    border: red 1px solid;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.content-3 {
+    grid-area: content-3;
+    border: red 1px solid;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.sidebar {
+    grid-area: sidebar;
+    border: red 1px solid;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.footer {
+    display: grid;
+    grid-template-areas: 
+        'f-section-1 f-section-2 f-section-3 f-section-4';
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    border: red 1px solid;
+    justify-items: stretch;
+}
+.f-section-1 {
+    grid-area: f-section-1;
+    border: red 1px solid;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.f-section-2 {
+    grid-area: f-section-2;
+    border: red 1px solid;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.f-section-3 {
+    grid-area: f-section-3;
+    border: red 1px solid;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.f-section-4 {
+    grid-area: f-section-4;
+    border: red 1px solid;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
