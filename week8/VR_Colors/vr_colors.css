@@ -1,0 +1,114 @@
+body {
+    font-size: 16px;
+}
+.header__layout{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 76px 0 74px;
+    margin-top: 50px;
+    width: 100%;
+}
+.button__header-button{
+    background-color: #5222D0;
+    border-radius: 100px;
+    border: #5222D0 1px solid;
+    width: 115px;
+    height: 38px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+main {
+    display: grid;
+    grid-template-areas: 
+        'main__content main__image'
+        'main__button main__image'
+        'navigation  main__image';
+    grid-template-rows: 1fr 100px 100px;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 116px;
+    margin-top: 50px;
+}
+.main__content {
+    grid-area: main__content;
+    display: grid;
+}
+.main__image {
+    grid-area: main__image;
+}
+h1 {
+    font-family: 'Russo One', sans-serif;
+    align-self: end;
+    font-size: 64px;
+}
+p {
+    align-self: start;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+.main__button-button {
+    background-color: #5222D0;
+    border: #5222D0 1px solid;
+    border-radius: 100px;
+    width: 270px;
+    height: 84px;
+    color: white;
+    font-family: 'Russo one', sans-serif;
+    font-size: 35px;
+}
+.main__button{
+    grid-area: main__button;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+nav {
+    grid-area: navigation;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 50px;
+}
+a {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    color: #5222D0;
+}
+@media screen and (max-width: 767px) {
+    body {
+        padding: 5px;
+        font-size: 16px;
+    }
+    .header__layout{
+        padding: 10px 20px 0 20px;
+    }
+    main{
+        grid-template-areas: 
+            'main__image'
+            'main__content'
+            'main__button'
+            'navigation';
+        grid-template-rows: 1fr 1fr 100px;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        padding: 0;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 1em;
+    }
+    nav{
+        justify-content: space-around;
+        width: 100%;
+        margin: 20px;
+        font-size: 0.8em;
+    }
+    .main__button {
+        display: flex;
+        justify-content: center;
+    }
+}
