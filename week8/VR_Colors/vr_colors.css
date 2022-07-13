@@ -18,7 +18,7 @@ body {
     text-transform: uppercase;
     font-size: 13px;
 }
-main {
+.main {
     display: grid;
     grid-template-areas: 
         'main__content main__image'
@@ -36,12 +36,12 @@ main {
 .main__image {
     grid-area: main__image;
 }
-h1 {
+.main__content-header {
     font-family: 'Russo One', sans-serif;
     align-self: end;
     font-size: 64px;
 }
-p {
+.main__content-parag {
     align-self: start;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
@@ -59,18 +59,18 @@ p {
 .main__button{
     grid-area: main__button;
 }
-img {
+.main__image-image {
     max-width: 100%;
     height: auto;
 }
-nav {
+.menu {
     grid-area: navigation;
     display: flex;
     justify-content: space-between;
     align-items: end;
     margin-bottom: 50px;
 }
-a {
+.menu__list {
     font-family: 'Roboto Slab', serif;
     font-size: 1em;
     color: #5222D0;
@@ -83,7 +83,7 @@ a {
     .header__layout{
         padding: 10px 20px 0 20px;
     }
-    main{
+    .main{
         grid-template-areas: 
             'main__image'
             'main__content'
@@ -95,13 +95,13 @@ a {
         justify-items: center;
         padding: 0;
     }
-    h1 {
+    .main__content-header {
         font-size: 3em;
     }
-    p {
+    .main__content-parag {
         font-size: 1em;
     }
-    nav{
+    .menu{
         justify-content: space-around;
         width: 100%;
         margin: 20px;
